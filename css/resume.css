@@ -1,0 +1,100 @@
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	height: auto;
+	
+}
+/* 头部 */
+.header{
+	height: 52px;
+	line-height: 52px;
+	background: #5CA6DB;
+
+}
+
+.header_tit{
+	margin-left: 10px;
+	color: #ffffff;
+	display: block;
+	width: 253px;
+	height: 52px;
+	font-size: 30px;
+	float: left;
+
+}
+
+.header_menu{
+	display: block;
+	float: right;
+	margin-right: 50px;
+
+}
+
+.header_menu li{
+	float: left;
+	margin-left: 50px;
+	line-height: 52px
+}
+.header_menu li a{
+	color: #ffffff;
+	
+	
+}
+
+.header_menu li a:hover{
+	background: #000000;
+}
+.header_menu li a:hover{
+	background: #000;
+	-webkit-transition:background 1s linear;
+	-moz-transition:background 1s linear;
+	-ms-transition:background 1s linear;
+	-o-transition:background 1s linear;
+	transition: background 1s linear;
+}
+
+
+
+/* 轮播 */
+.slide_container{
+	width: 1200px;
+	height: 400px;
+	background: #5CA6DB;
+	margin-top: 5px;
+}
+
+.slidebox{
+	width: 600px;
+	padding: 5px;
+	height:300px;
+	position:relative;
+	left: 295px;
+	right: 295px;
+	top:50px;
+	background: #f2f2f1;
+	
+
+}
+
+.slide_bd{
+	position: relative;
+	overflow: hidden;
+}
+.slide_bd li{
+	float: left;
+	width: 600px; 
+	height:300px;
+	overflow: hidden;
+}
+
+.slide_bd li div{
+	width: 600px;
+	height:300px;
+	
+
+}
+
+.slide_bd li div img{
+	width: 100%;
+	height: 100%;
+}

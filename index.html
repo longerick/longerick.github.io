@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>longerick resume</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/resume.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+	<script>
+		$(function(){
+			$('.slidebox').slide({mainCell:".slide_bd",titCell:".slide_hd li",effect:"leftLoop",autoPlay:true,interTime:3000})
+		})
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<a href="javascript:;" class="header_tit">longerick个人网站</a>
+			<ul class="header_menu">
+				<li><a href="javascript:;">HOME</a></li>
+				<li><a href="javascript:;">ABOUT ME</a></li>
+				<li><a href="javascript:;">SKILLS</a></li>
+				<li><a href="javascript:;">RESUME</a></li>
+				<li><a href="javascript:;">MORE</a></li>
+			</ul>
+		</div>
+		<div class="slide_container">
+			<div class="slidebox">
+				<ul class="slide_hd">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ul class="slide_bd">
+					<li><div><img src="images/1.jpg" alt=""/></div></li>
+					<li><div><img src="images/2.jpg" alt=""/></div></li>
+					<li><div><img src="images/1.jpg" alt=""></div></li>
+					<li><div><img src="images/2.jpg" alt=""></div></li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			
+		</div>
+
+		<div class="footer">
+			
+		</div>
+	</div>
+</body>
+</html>

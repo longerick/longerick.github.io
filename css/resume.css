@@ -4,63 +4,13 @@
 	height: auto;
 	
 }
-/* 头部 */
-.header{
-	height: 52px;
-	line-height: 52px;
-	background: #5CA6DB;
-
-}
-
-.header_tit{
-	margin-left: 10px;
-	color: #ffffff;
-	display: block;
-	width: 253px;
-	height: 52px;
-	font-size: 30px;
-	float: left;
-
-}
-
-.header_menu{
-	display: block;
-	float: right;
-	margin-right: 50px;
-
-}
-
-.header_menu li{
-	float: left;
-	margin-left: 50px;
-	line-height: 52px
-}
-.header_menu li a{
-	color: #ffffff;
-	
-	
-}
-
-.header_menu li a:hover{
-	background: #000000;
-}
-.header_menu li a:hover{
-	background: #000;
-	-webkit-transition:background 1s linear;
-	-moz-transition:background 1s linear;
-	-ms-transition:background 1s linear;
-	-o-transition:background 1s linear;
-	transition: background 1s linear;
-}
-
-
 
 /* 轮播 */
 .slide_container{
 	width: 1200px;
 	height: 400px;
 	background: #5CA6DB;
-	margin-top: 5px;
+	margin-top: 15px;
 }
 
 .slidebox{
@@ -97,4 +47,128 @@
 .slide_bd li div img{
 	width: 100%;
 	height: 100%;
+}
+
+.slide_hd{
+	position: absolute;
+	bottom: -30px;
+	left: 256px;
+}
+.slide_hd li{
+	float: left;
+	width: 15px;
+	height: 15px;
+	background:  url("../images/circle.png") no-repeat center center;
+	margin-right: 5px;
+}
+
+ .slide_hd li.on{
+	background: url("../images/circle_h.png") no-repeat center center;
+	cursor: pointer;
+} 
+
+ .slide_hd li:hover{
+	background: url("../images/circle_h.png") no-repeat center center;
+	cursor: pointer;
+} 
+
+
+.slidebox a.next{
+	width: 70px;
+	height: 71px;
+	background: url("../images/circleBig.png") no-repeat center center;
+	position: absolute;
+	right: -35px;
+	top: 115px;
+}
+
+.slidebox a.prev{
+	width: 70px;
+	height: 71px;
+	background: url("../images/circleBig.png") no-repeat center center;
+	position: absolute;
+	left: -35px;
+	top: 115px;
+}
+
+.slidebox a.next em{
+	width: 11px;
+	height: 18px;
+	display: block;
+	background: url("../images/rowR.png") no-repeat center center;
+	position: relative;
+	right: -42px;
+	top: 26px;
+}
+
+.slidebox a.prev em{
+	width: 11px;
+	height: 18px;
+	display: block;
+	background: url("../images/rowL.png") no-repeat center center;
+	position: relative;
+	left: 17px;
+	top: 26px;
+}
+
+
+/* 中间内容 */
+.content{
+	width: 1198px;
+	height: auto;
+	margin-top: 15px;
+	border: 1px solid #5CA6DB;
+}
+
+/* 个人简介 */
+.con_introduce{
+	background: #ffffff;
+}
+
+.con_introduce span{
+	font-size: 20px;
+	color: #000000;
+	font-weight: bold;
+	display: block;
+	margin-left: 10px;
+	font-family: "微软雅黑";
+	padding-top: 10px;
+}
+
+.con_introduce p{
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+
+
+
+
+
+/* 联系我们 */
+.contact{
+	height: 200px;
+	background: #8ec2f5;
+	margin-top: 15px;
+	text-align: center;
+}
+
+.contact_con{
+	width: 1000px;
+	margin:0px auto;
+}
+.contact_con h1{
+	padding: 40px 0px 40px;
+	background: url("../images/Tline.png") repeat-x center center;
+}
+
+.contact_con h1 span{
+	background: #8ec2f5;
+	padding: 0px 30px;
+	color: #ffffff;
+}
+
+.contact_con p.p1{
+	color: #ffffff;
+	font-size: 20px;
 }

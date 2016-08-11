@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>longerick resume00</title>
+	<title>longerick resume</title>
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/resume.css">
 	<script src="js/jquery.min.js"></script>
@@ -10,6 +10,26 @@
 	<script>
 		$(function(){
 			$('.slidebox').slide({mainCell:".slide_bd",titCell:".slide_hd li",effect:"leftLoop",autoPlay:true,interTime:3000})
+			$.ajax({
+				type:'POST',
+				url:'http://localhost/resume/introduce.json',
+				dataType:'json',
+				success:function(data){
+					/*for(var i=0;i<data.length;i++){
+						var str='<p>'+data[i].jj+'</p>'
+						$('.con_introduce').append(str);
+
+					}*/
+					/*for(var obj in data){
+						var str='<p>'+data[obj].jj+'</p>'
+						$('.con_introduce').append(str);
+					}*/
+					$(data).each(function(index){
+						var str='<p>'+data[index].jj+'</p>'
+						$('.con_introduce').append(str);
+					})
+				}
+			})
 		})
 	</script>
 </head>
@@ -27,26 +47,37 @@
 		</div>
 		<div class="slide_container">
 			<div class="slidebox">
-				<ul class="slide_hd">
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
+				<a href="javascript:;" class="next"><em></em></a>
+				<a href="javascript:;" class="prev"><em></em></a>
 				<ul class="slide_bd">
 					<li><div><img src="images/1.jpg" alt=""/></div></li>
 					<li><div><img src="images/2.jpg" alt=""/></div></li>
 					<li><div><img src="images/1.jpg" alt=""></div></li>
 					<li><div><img src="images/2.jpg" alt=""></div></li>
 				</ul>
+				<ul class="slide_hd">
+					<li class="on"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
 			</div>
 		</div>
 		<div class="content">
-			
+			<div class="con_introduce">
+				<span>个人简介</span>
+			</div>
 		</div>
-
+		<div class="contact">
+			<div class="contact_con">
+				<h1><span>CONTACT ME</span></h1>
+				<p class="p1">请联系我吧!!!</p>
+				<p>telephone:(020)1234567</p>
+				<p>email:123456@qq.com</p>
+			</div>
+		</div>
 		<div class="footer">
-			
+			<p>COPYRIGHT 2016 - BULIT WITH LONGERICK</p>
 		</div>
 	</div>
 </body>

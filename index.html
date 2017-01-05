@@ -12,7 +12,7 @@
 			$('.slidebox').slide({mainCell:".slide_bd",titCell:".slide_hd li",effect:"leftLoop",autoPlay:true,interTime:3000})
 			$.ajax({
 				type:'GET',
-				url:'http://localhost/resume/json/introduce.json',
+				url:'https://longerick.github.io/json/introduce.json',
 				dataType:'json',
 				success:function(data){
 					$(data).each(function(index){

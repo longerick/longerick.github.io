@@ -11,19 +11,10 @@
 		$(function(){
 			$('.slidebox').slide({mainCell:".slide_bd",titCell:".slide_hd li",effect:"leftLoop",autoPlay:true,interTime:3000})
 			$.ajax({
-				type:'GET',
-				url:'https://longerick.github.io/introduce.php',
+				type:'POST',
+				url:'http://localhost/resume/json/introduce.json',
 				dataType:'json',
 				success:function(data){
-					/*for(var i=0;i<data.length;i++){
-						var str='<p>'+data[i].jj+'</p>'
-						$('.con_introduce').append(str);
-
-					}*/
-					/*for(var obj in data){
-						var str='<p>'+data[obj].jj+'</p>'
-						$('.con_introduce').append(str);
-					}*/
 					$(data).each(function(index){
 						var str='<p>'+data[index].jj+'</p>'
 						$('.con_introduce').append(str);
@@ -34,17 +25,17 @@
 	</script>
 </head>
 <body>
-	<div class="container">
-		<div class="header">
+	<div class="header">
 			<a href="javascript:;" class="header_tit">longerick个人网站</a>
 			<ul class="header_menu">
-				<li><a href="javascript:;">HOME</a></li>
-				<li><a href="javascript:;">ABOUT ME</a></li>
-				<li><a href="javascript:;">SKILLS</a></li>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="me.html">ABOUT ME</a></li>
+				<li><a href="skills.html">SKILLS</a></li>
 				<li><a href="javascript:;">RESUME</a></li>
 				<li><a href="javascript:;">MORE</a></li>
 			</ul>
 		</div>
+	<div class="container">
 		<div class="slide_container">
 			<div class="slidebox">
 				<a href="javascript:;" class="next"><em></em></a>
@@ -67,8 +58,20 @@
 			<div class="con_introduce">
 				<span>个人简介</span>
 			</div>
+			<div class="con_myWebWork">
+				<span>我的作品</span>
+				<ul>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+				</ul>
+			</div>
 		</div>
-		<div class="contact">
+	</div>
+	<div class="contact">
 			<div class="contact_con">
 				<h1><span>CONTACT ME</span></h1>
 				<p class="p1">请联系我吧!!!</p>
@@ -77,8 +80,7 @@
 			</div>
 		</div>
 		<div class="footer">
-			<p>COPYRIGHT 2016 - BULIT WITH LONGERICK</p>
+			<p>COPYRIGHT 2016 - BUILT WITH LONGERICK</p>
 		</div>
-	</div>
 </body>
 </html>

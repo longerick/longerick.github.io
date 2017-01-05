@@ -1,6 +1,6 @@
 $(function(){
 	$.ajax({
-		type:'POST',
+		type:'GET',
 		url:'http://localhost/resume/img.json',
 		dataType:'json',
 		success:function(data){

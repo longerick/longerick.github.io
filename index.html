@@ -11,7 +11,7 @@
 		$(function(){
 			$('.slidebox').slide({mainCell:".slide_bd",titCell:".slide_hd li",effect:"leftLoop",autoPlay:true,interTime:3000})
 			$.ajax({
-				type:'POST',
+				type:'GET',
 				url:'http://localhost/resume/json/introduce.json',
 				dataType:'json',
 				success:function(data){

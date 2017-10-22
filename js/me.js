@@ -1,7 +1,7 @@
 $(function(){
 	$.ajax({
 		type:'GET',
-		url:'https://longerick.github.io/json/img.json',
+		url:'https://longerick.github.io/resume/json/img.json',
 		dataType:'json',
 		beforeSend:function(XMLHttpRequest){
 			/*$('<img src="images/load.gif" />').appendTo('.me_pic ul li');*/

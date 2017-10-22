@@ -1,7 +1,7 @@
 $(function(){
 	$.ajax({
 		type:'GET',
-		url:'https://longerick.github.io/json/img.json',
+		url:'https://longerick.github.io/resume/json/img.json',
 		dataType:'json',
 		success:function(data){
 			$(data).each(function(index){
